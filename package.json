@@ -9,7 +9,7 @@
   },
   "hucky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "precommit": "lint-staged"
     }
   },
   "lint-staged": {
