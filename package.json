@@ -14,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "*.js, *.vue, *.html, *.css": [
+    "*.{js,vue,html,css}": [
       "npm run lint --fix",
       "git add"
     ]
