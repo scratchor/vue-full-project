@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepush": "npm test"
   },
   "hucky": {
     "hooks": {
@@ -14,12 +15,16 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue,html,css}": [
+    "*.{js,vue}": [
       "npm run lint --fix",
       "git add"
     ]
   },
   "dependencies": {
+    "auth0-js": "^9.10.2",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.18",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
