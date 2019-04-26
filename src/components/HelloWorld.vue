@@ -20,6 +20,7 @@ export default {
       isAuthenticated: this.$auth.isAuthenticated()
     };
   },
+  computed: {},
   async created() {
     try {
       await this.$auth.renewTokens();

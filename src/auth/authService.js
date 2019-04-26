@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import auth0 from "auth0-js";
 import EventEmitter from "events";
 
@@ -26,7 +27,7 @@ class AuthService extends EventEmitter {
   // Starts the user login flow
 
   login(customState) {
-    this.webAuth.authorize({
+    webAuth.authorize({
       appState: customState
     });
   }
@@ -96,7 +97,6 @@ class AuthService extends EventEmitter {
     return Date.now() < this.tokenExpiry && localStorage.getItem(localStorageKey) === "true";
   }
 
-  // eslint-disable-next-line class-methods-use-this
   isExpired() {
     return localStorage.getItem(localStorageKey) === "true";
   }

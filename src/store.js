@@ -5,6 +5,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {},
-  mutations: {},
-  actions: {}
+  mutations: {
+    /*    checkauth: state => {
+      state.isAuthenticated = auth.isAuthenticated();
+    } */
+  },
+  actions: {
+    /*    checkauth: context => {
+      setTimeout(function() {
+        context.commit("checkauth");
+      }, 3000);
+    } */
+  }
 });
